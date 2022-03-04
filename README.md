@@ -1,4 +1,4 @@
-# ⚠️ This repo is just a clone of [YukkiMusicBot](https://github.com/TeamYukki/YukkiMusicBot). All credits goes to devs of [YukkiMusicBot](https://github.com/TeamYukki/YukkiMusicBot).
+# ⚠️ This repo is just a clone of [YukkiMusicBot](https://github.com/TeamYukki/YukkiMusicBot). All credits goes to devs of [YukkiMusicBot](https://github.com/TeamYukki/YukkiMusicBot) & [SiestaXMusic](https://github.com/TechShreyash/SiestaXMusic).
 
 
 
@@ -20,16 +20,14 @@
     A Telegram Music+video Bot written in Python using Pyrogram and Py-Tgcalls 
 </h4>
 <p align="center">
-    <a href="https://t.me/YukkiRobot"> Ready-To-Use Bot </a> •
+    <a href="https://t.me/szrosebot"> Ready-To-Use Bot </a> •
     <a href="https://notreallyshikhar.gitbook.io/yukkimusicbot/about/getting-started"> Documentation </a> •
-    <a href="https://t.me/OfficialYukki"> Support Channel </a> •
-    <a href="https://t.me/YukkiSupport"> Support Chat </a> 
+    <a href="https://t.me/szteambots"> Support Channel </a> •
+    <a href="https://t.me/slbotzone"> Support Chat </a> 
 </p>
-<p align="center">
-   <a href="https://www.buymeacoffee.com/notreallysy" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-</p>
-    
-# Yukki Music Bot
+
+
+# Rose Music Bot
 A Powerful Telegram Music+Video Bot by which you can stream songs, videos and even live streams in your group calls via various sources. It comes with  user friendly and easy to use yet elegant features.
 
 ## Deployment
@@ -37,7 +35,7 @@ Read [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/require
 
 > Click on buttons to expand!
 <details>
-<summary><b>🔗 Requirements</b></summary>
+<summary><b>🔥 Requirements</b></summary>
 <br>
     
 - [Python3.9](https://www.python.org/downloads/release/python-390/)
@@ -49,7 +47,7 @@ Read [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/require
 </details>
 
 <details>
-<summary><b>🔗 String Session</b></summary>
+<summary><b>🔥 String Session</b></summary>
 <br>
     
 > You'll need a [API_ID](https://notreallyshikhar.gitbook.io/yukkimusicbot/vars/mandatory-vars#1.-api_id) & [API_HASH](https://notreallyshikhar.gitbook.io/yukkimusicbot/vars/mandatory-vars#2.-api_hash) in order to generate pyrogram session. 
@@ -64,7 +62,7 @@ Read [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/require
 </details>
 
 <details>
-<summary><b>🔗 Deploy to Heroku</b></summary>
+<summary><b>🔥 Deploy to Heroku</b></summary>
 <br>
 
 > Heroku has two vars[ HEROKU_API_KEY & HEROKU_APP_NAME ] for Updater to work. 
@@ -77,7 +75,7 @@ Read [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/require
 </details>
 
 <details>
-<summary><b>🔗 Deploy to VPS</b></summary>
+<summary><b>🔥 Deploy to VPS</b></summary>
 <br>
 
 > Checkout [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/local-hosting-or-vps) for Detailed Explanation on VPS Deploy
