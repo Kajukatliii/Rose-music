@@ -36,18 +36,11 @@ from Yukki.Utilities.videostream import start_stream_video
 from Yukki.Utilities.youtube import (get_yt_info_id, get_yt_info_query,
                                      get_yt_info_query_slider)
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
+from . fsub import fsub
 from pyrogram.errors import UserNotParticipant
 
 loop = asyncio.get_event_loop()
 
-JOIN_ASAP = f"⛔️** Access Denied **⛔️\n\n🙋‍♂️ Hey There , You Must Join @szteambots Telegram Channel To Use This BOT. So, Please Join it & Try Again🤗. Thank You 🤝"
-
-FSUBB = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton(text="Sz Team Bots <sz/>", url=f"https://t.me/szteambots") 
-        ]]
-    )
 
 
 @app.on_message(
@@ -57,15 +50,9 @@ FSUBB = InlineKeyboardMarkup(
 @logging
 @PermissionCheck
 @AssistantAdd
+@fsub
 async def play(_, message: Message):
     await message.delete()
-    try:
-        await message._client.get_chat_member(int("-1001325914694"), message.from_user.id)
-    except UserNotParticipant:
-        await message.reply_text(
-        text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
-    )
-        return 
     mention = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"    
     if message.chat.id not in db_mem:
         db_mem[message.chat.id] = {}
