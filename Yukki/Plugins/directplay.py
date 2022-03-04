@@ -33,14 +33,8 @@ from Yukki.Utilities.youtube import (get_yt_info_id, get_yt_info_query,
 from Yukki.Plugins.custom.func import mplay_stream, vplay_stream
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from . fsub import fsub
 
-JOIN_ASAP = f"⛔️** Access Denied **⛔️\n\n🙋‍♂️ Hey There , You Must Join @szteambots Telegram Channel To Use This BOT. So, Please Join it & Try Again🤗. Thank You 🤝"
-
-FSUBB = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton(text="Sz Team Bots <sz/>", url=f"https://t.me/szteambots") 
-        ]]
-    )
 
 @app.on_message(
     filters.command(["mplay", f"mplay@{BOT_USERNAME}"]) & filters.group
@@ -49,14 +43,8 @@ FSUBB = InlineKeyboardMarkup(
 @logging
 @PermissionCheck
 @AssistantAdd
-async def mplayaa(_, message: Message): 
-    try:
-        await message._client.get_chat_member(int("-1001325914694"), message.from_user.id)
-    except UserNotParticipant:
-        await message.reply_text(
-        text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
-    )
-        return   
+@fsub
+async def mplayaa(_, message: Message):  
     await message.delete()
     if message.chat.id not in db_mem:
         db_mem[message.chat.id] = {}
@@ -166,14 +154,8 @@ async def mplayaa(_, message: Message):
 @logging
 @PermissionCheck
 @AssistantAdd
+@fsub
 async def vplayaaa(_, message: Message):
-    try:
-        await message._client.get_chat_member(int("-1001325914694"), message.from_user.id)
-    except UserNotParticipant:
-        await message.reply_text(
-        text=JOIN_ASAP, disable_web_page_preview=True, reply_markup=FSUBB
-    )
-        return 
     await message.delete()
     if message.chat.id not in db_mem:
         db_mem[message.chat.id] = {}
