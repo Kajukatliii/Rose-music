@@ -1,12 +1,11 @@
 {
-  "name": "SiestaXMusic",
+  "name": "Music",
   "description": "A Telegram Music Bot with proper functions written in Python with Pyrogram and Py-Tgcalls.",
-  "logo": "https://telegra.ph/file/70eacddcef7a56310cf70.jpg",
   "keywords": [
   "python3",
   "telegram",
   "bot",
-  "SiestaXMusic",
+  "Music",
   "telegram-bot",
   "pyrogram"
   ],
@@ -115,6 +114,11 @@
     "PM_PERMIT": {
       "description": "Use True to enable PM Permit. FALSE to disable.",
       "value": "TRUE",
+      "required": false
+    },
+     "FSUB_CHANNEL": {
+      "description": "FSUB_CHANNEL for get fsub to your channel give  channel id",
+      "value": "",
       "required": false
     }
   },
