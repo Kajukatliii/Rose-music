@@ -73,12 +73,12 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]Congrats!! Yukki Music Bot has started successfully!\n"
+        "[bold green]Congrats!! Anime Aura Music Bot has started successfully!\n"
     )
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>Congrats!! Music Bot has started successfully!</b>",
+            "<b>Congrats!! Anime Music Bot has started successfully!</b>",
         )
     except Exception as e:
         print(
@@ -201,11 +201,11 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await LOG_CLIENT.join_chat("szteambots")
-            await LOG_CLIENT.join_chat("slbotzone")
+            await LOG_CLIENT.join_chat("animechataura")
+            await LOG_CLIENT.join_chat("maniaxnetwork")
         except:
             pass
-    console.print(f"└[red] Yukki Music Bot Boot Completed.")
+    console.print(f"└[red] Anime Aura Music Bot Boot Completed.")
     if STRING1 != "None":
         await pytgcalls1.start()
     if STRING2 != "None":
